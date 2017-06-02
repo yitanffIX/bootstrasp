@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale-1,shrink-to-fit=no" />
+        <title>Prueba</title>
+        <link rel="stylesheet"  href="css/bootstrap.min.css" />
+        <style >
+        	
+        	.borde
+        	{
+        		border: 1px #EEAD0E solid;
+        	}
+
+        	.fondo
+        	{
+        		background: #B4EEB4;
+        	}
+
+        	.palabras
+        	{
+        		text-align: center;
+        	}
+        	
+        </style>
+    </head>
+    <body>
+    	<h1>Probando Bootstrap 4</h1>
+    	<!--Cada vez que se trabaja en una sección del sitio se usa los conteiners. El atributo fluid provoca que utilicemos todo el ancho del conteiner--> 
+    	<div class="container-fluid fondo">
+    		<p>Texto de ejemplo</p>
+    	</div>
+    	<div class="container fondo">
+    		<p>Texto de ejemplo</p>
+    	</div>
+    	<!--Utilización de rejillas en bootstrap-->
+    	<div class="container">
+    		<div class="row">
+    			<div class="col borde palabras" >Primera</div>
+    			<div class="col borde palabras" >Segunda</div>
+    			<div class="col borde palabras" >Tercera</div>
+    		</div>
+    		
+    	</div>
+    	<!--Combinando Columnas-->
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-2 borde palabras" >2 Espacios</div>
+    			<div class="col-6 borde palabras" >6 Espacios</div>
+    			<div class="col-4 borde palabras" >4 Espacios</div> 
+    		</div>
+    	<div>
+
+    	<hr>
+
+    	<!--Probando el sistema de columnas según el tamaño de px-->
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-sm-6 col-md-4 col-lg-2 col-xl-4 borde palabras" >Primera</div>
+    			<div class="col-sm-6 col-md-4 col-lg-1 col-xl-6 borde palabras" >Segunda</div>
+    			<div class="col-sm-12 col-md-4 col-lg-9 col-xl-2 borde palabras" >Tercera</div>
+    		</div>
+    		
+    	</div>
+    	<hr>
+
+    	<!--Salto de fila en tamaños automáticos de columnas-->
+    	<div class="container">
+    		<div class="row">
+    			<div class="col borde palabras" >Primera</div>
+    			<div class="col borde palabras" >Segunda</div>
+    			<div class="w-100"></div> 
+    			<div class="col borde palabras" >Tercera</div>
+    			<div class="col borde palabras" >Cuarta</div>
+    		</div>
+    		
+    	</div>
+
+    </body>
+</html>
